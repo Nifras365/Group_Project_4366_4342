@@ -1,0 +1,71 @@
+﻿<Window x:Class="Student_management_system.StudentDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Student_management_system"
+        mc:Ignorable="d"
+        Title="StudentDetails" Height="650" Width="800" WindowStartupLocation="CenterScreen"
+        WindowStyle="None" Background="Transparent" AllowsTransparency="True">
+    <Window.Resources>
+        <LinearGradientBrush x:Key="WindowBackgroundBrush" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#36454F" Offset="0"/>
+            <GradientStop Color="#E0115F" Offset="0.7"/>
+            <GradientStop Color="#414C56" Offset="0.5"/>
+            <GradientStop Color="#FF4081" Offset="0.6"/>
+        </LinearGradientBrush>
+    </Window.Resources>
+    <Border Background="{StaticResource WindowBackgroundBrush}" CornerRadius="20">
+    <Grid>
+        <Label Content="Student Details" FontSize="36" 
+              Style="{StaticResource LableSt}" HorizontalAlignment="Center"/>
+        <StackPanel>
+            <TextBlock Text="First name" Style="{StaticResource TxBlock}" Margin="20 70 0 0"/>
+            <TextBox x:Name="FiNametb" Height="30" Width="500" Margin="100 -30 0 0" FontSize="18"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="Last name" Style="{StaticResource TxBlock}" Margin="20 120 0 0"/>
+            <TextBox x:Name="LaNametb" Height="30" Width="500" Margin="100 -30 0 0" FontSize="18"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="Registration No" Style="{StaticResource TxBlock}" Margin="20 170 0 0"/>
+            <TextBox x:Name="ReNotb" Height="30" Width="500" Margin="100 -30 0 0" FontSize="18"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="Mail" Style="{StaticResource TxBlock}" Margin="20 220 0 0"/>
+            <TextBox x:Name="mailtb" Height="30" Width="500" Margin="100 -30 0 0" FontSize="18"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="Date of birth" Style="{StaticResource TxBlock}" Margin="20 270 0 0"/>
+            <TextBox x:Name="DOBtb" Height="30" Width="500" Margin="100 -30 0 0" FontSize="18"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="Age" Style="{StaticResource TxBlock}" Margin="20 320 0 0"/>
+            <TextBox x:Name="aGEtb" Height="30" Width="500" Margin="100 -30 0 0" FontSize="18"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="Phone Number" Style="{StaticResource TxBlock}" Margin="20 370 0 0"/>
+            <TextBox x:Name="Phnotb" Height="30" Width="500" Margin="100 -30 0 0" FontSize="18"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="Address" Style="{StaticResource TxBlock}" Margin="20 420 0 0"/>
+            <TextBox x:Name="Addresstb" Height="30" Width="500" Margin="100 -30 0 0" FontSize="18"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="Course of study" Style="{StaticResource TxBlock}" Margin="20 470 0 0"/>
+            <TextBox x:Name="COStb" Height="30" Width="500" Margin="100 -30 0 0" FontSize="18"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="Gender" Style="{StaticResource TxBlock}" Margin="20 520 0 0"/>
+            <TextBox x:Name="Gendertb" Height="30" Width="500" Margin="100 -30 0 0" FontSize="18"/>
+        </StackPanel>
+
+        <Button x:Name="EditButton" Content="Edit" Style="{StaticResource ButtonM}" 
+                Margin="550 550 0 0" Width="200" Click="EditButton_Click"/>
+        <Button x:Name="SaveButton" Content="Save" Style="{StaticResource ButtonM}" 
+                Margin="0 550 0 0" Width="200" Click="SaveButton_Click"/>
+        <Button x:Name="CloseButton" Content="Close" Style="{StaticResource ButtonM}" 
+                Margin="-550 550 0 0" Width="200" Click="CloseButton_Click"/>
+    </Grid>
+    </Border>
+</Window>
